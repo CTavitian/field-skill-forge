@@ -1,10 +1,10 @@
 # field-skill-forge
 
-Package and evaluate field-service Agent Skills. Skills are versioned folders with `SKILL.md` frontmatter (inputs, outputs, triggers, forbidden behaviours). Evaluation is a binary scorecard — pass or fail per layer — not a fuzzy rubric.
+Package and evaluate field-service Agent Skills. Skills are versioned folders with `SKILL.md` frontmatter (inputs, outputs, triggers, forbidden behaviours). Evaluation is a binary scorecard, pass or fail per layer, not a fuzzy rubric.
 
 ## Why
 
-Generic prompt libraries do not fail closed. Ops skills need schemas, explicit refusals, and regression cases that prove a skill does *not* fire on unrelated prompts.
+Generic prompt libraries do not refuse by default. Ops skills need schemas, explicit refusals, and regression cases that prove a skill does *not* fire on unrelated prompts.
 
 ## Layers
 
@@ -29,6 +29,10 @@ npm run eval -- --skills skills --cases evals/cases.yaml
 
 - Not a marketplace or host for third-party skills
 - Does not call a live model; functional cases use documented mock outputs
+
+## Status
+
+A learning project. The example data is made up.
 
 ## Licence
 
